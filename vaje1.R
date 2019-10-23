@@ -1,4 +1,51 @@
-#PREPI?I OD KATARINE 1. uro
+# PREPISANA 1. ura od Eve:
+v <- c(100, 200, 300)
+cumsum(v)
+diff(v)
+diff(v, lag = 2)
+diff(v, differences = 2)
+diff(v, differences = 1)
+
+M <- matrix(1:15, 3, 5)
+M <- matrix(1:15, 3, 5, byrow = TRUE)
+M[2,3]
+M[2,]
+M[,3]
+c(M)
+t(M)
+2 * M
+M + 2
+A <- rbind(c(2, -2), c(2, 2))
+B <- rbind(c(2, 2), c(2, -2))
+A * B
+A %*% B
+A %*% c(3, 4)
+solve(A, c(-2, 14))
+solve(A)
+
+c(2, "bla")
+v[1] + 2
+
+list(2, "bla") -> l
+l[1]
+l[2]
+
+nas_clovek <- list(ime = "Janez", starost = 35, zena = "Marija", starost_otrok = c(15, 13,2))
+# $ime
+nas_clovek[["ime"]]
+
+nasi_ljudje <- data.frame()
+nasi_ljudje <- data.frame(
+  ime = c("Janez", "Franc", "Tone"),
+  starost = c(32, 43,55),
+  st_otrok = c(3, 2,4),
+  zena = c("Marija", "Štefka", "Lojzka")
+)
+nasi_ljudje[1]
+nasi_ljudje[c(1,3)]
+as.vector(nasi_ljudje[,1])
+
+############################################################################################################
 
 # http://valjhun.fmf.uni-lj.si/~raicm/Poucevanje/CV/Datoteke/
 
